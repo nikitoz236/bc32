@@ -1,11 +1,7 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-//#include "types.h"
-
-#include <stm32f10x.h>
-
-#define F_CPU 	24000000
+#include "core.h"
 
 extern volatile u32 global_ms;
 

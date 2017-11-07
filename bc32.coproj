@@ -73,6 +73,7 @@
     <File name="cmsis_boot/startup/startup_stm32f10x_md_vl.c" path="cmsis_boot/startup/startup_stm32f10x_md_vl.c" type="1"/>
     <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
     <File name="src/uart.h" path="drivers/uart.h" type="1"/>
+    <File name="src/ecu_memory_map.h" path="computer/ecu_memory_map.h" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="src/timer.c" path="misc/timer.c" type="1"/>
     <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
@@ -82,6 +83,7 @@
     <File name="src/print.c" path="misc/print.c" type="1"/>
     <File name="src/debug.h" path="misc/debug.h" type="1"/>
     <File name="src/ringbuffer.h" path="misc/ringbuffer.h" type="1"/>
+    <File name="src/computer.h" path="computer/computer.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
@@ -89,11 +91,11 @@
     <File name="src/kline.c" path="drivers/kline.c" type="1"/>
     <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
     <File name="cmsis" path="" type="2"/>
+    <File name="src/computer.c" path="computer/computer.c" type="1"/>
     <File name="src/kline.h" path="drivers/kline.h" type="1"/>
     <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
     <File name="src/uart.c" path="drivers/uart.c" type="1"/>
     <File name="src/core.h" path="core.h" type="1"/>
-    <File name="src/types.h" path="misc/types.h" type="1"/>
     <File name="src/gpio.c" path="misc/gpio.c" type="1"/>
     <File name="src/print.h" path="misc/print.h" type="1"/>
     <File name="src/ringbuffer.c" path="misc/ringbuffer.c" type="1"/>

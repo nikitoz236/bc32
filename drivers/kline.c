@@ -1,18 +1,29 @@
 #include "kline.h"
 
-
-/*
-
-Запилить либу на уарт
-если дефайнишь рх или тх буфер то включается соответствующая секция на обработки прерываний
-
-макросы на чтение и запись уартов - также как с принтами
+//enum KlineStage
+//{
+//
+//
+//} stage;
 
 
-*/
 
 
-void kline_read_memory(char * buffer, u8 amount, u8 offset)
+
+
+
+
+void init_kline(void)
+{
+	init_u3(9600);
+
+}
+
+void kline_routine(void)
 {
 
 }
+
+
+
+

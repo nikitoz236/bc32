@@ -1,8 +1,7 @@
 #ifndef GPIO_H
 #define GPIO_H
 
-#include <stm32f10x.h>
-#include "types.h"
+#include "core.h"
 
 #define INPUT_FLOATING			0b00000100
 #define INPUT_PULL_UP			0b10001000
