@@ -2,6 +2,14 @@
 #include "ecu_memory_map.h"
 
 
+#define INJECTOR_PERFOMANCE		235
+
+#define OBD_WAITING_TIMEOUT				2000
+
+
+
+
+
 typedef struct
 {
 	u32 value;
@@ -33,6 +41,7 @@ struct BC
 	BCvalue voltage_adc;
 	BCvalue tank;
 	BCvalue obd_period;
+	BCvalue knock;
 };
 
 extern struct BC bc;

@@ -26,20 +26,23 @@ void calc_kline (u8 * frame, u8 page)
 		bc.throttle.value = (((HondaMemoryMap_1*)frame)->tps - 24) * 500;
 		bc.voltage_obd.value = mul(((HondaMemoryMap_1*)frame)->voltage, 95.693779);
 		bc.alternator_load.value = mul(((HondaMemoryMap_1*)frame)->alt_load, 392.156862);
-		bc.current.value = 77060 - mul(((HondaMemoryMap_1)frame)->eld_load, 394.150802);
+		bc.current.value = 77060 - mul(((HondaMemoryMap_1*)frame)->eld_load, 394.150802);
 
 		break;
 
 	case 2 :
-//		correction_short->value = (((double)buffer[0] / 128 - 1) * 100);
-//		correction_long->value = (((double)buffer[2] / 128 - 1) * 100);
-//		injection->value = (double)(256 * buffer[4] + buffer[5]) / 250;
-//		idling_valve->value = buffer[8] / 2.55;
+		bc.correction_short.value = mull(((HondaMemoryMap_2*)frame)->correction_short, 781.25) - 100000;
+		bc.correction_long.value = mull(((HondaMemoryMap_2*)frame)->correction_long, 781.25) - 100000;
+		bc.injection.value = ((HondaMemoryMap_2*)frame)->injection * 4;
+		bc.idling_valve.value = mul(((HondaMemoryMap_2*)frame)->idle_position, 392.156862);
 		break;
 
-	case 9 :
-//		engine_load->value = buffer[0xC] / 2.55;
+	case 3 :
+		bc.knock.value = mull(((HondaMemoryMap_3*)frame)->knock, 18,181818);
 		break;
+
+	case 9:
+		bc.engine_load.value = mull(((HondaMemoryMap_3*)frame)-> , 392.156862);
 
 	default:
 		break;
